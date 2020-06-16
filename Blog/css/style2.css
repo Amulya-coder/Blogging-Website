@@ -23,8 +23,6 @@ ul{
   padding:0;
 }
 
-
-
 .button_1{
   height:38px;
   background:#e8491d;
@@ -64,7 +62,6 @@ ul{
   height:25px;
   width:250px;
 }
-
 
 /* Sidebar */
 aside#sidebar{
@@ -129,7 +126,6 @@ header a:hover{
   font-weight:bold;
 }
 
-
 /* footer */
 
 footer{
@@ -141,18 +137,13 @@ footer{
 }
 
 
-
-
-
 /* Media Queries */
 @media(max-width: 768px){
   
-
   header{
     padding-bottom:20px;
   }
 
- 
   #newsletter button, .quote button{
     display:block;
     width:100%;
@@ -163,23 +154,6 @@ footer{
     margin-bottom:5px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Newsletter */
 #newsletter{
