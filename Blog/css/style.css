@@ -1,3 +1,5 @@
+@import url(style2.css);
+
 body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
@@ -5,79 +7,7 @@ body{
   background-color:#f4f4f4;
 }
 
-/* Global */
-.container{
-  width:80%;
-  margin:auto;
-  overflow:hidden;
-}
 
-ul{
-  margin:0;
-  padding:0;
-}
-
-.button_1{
-  height:38px;
-  background:#e8491d;
-  border:0;
-  padding-left: 20px;
-  padding-right:20px;
-  color:#ffffff;
-}
-
-.dark{
-  padding:15px;
-  background:#35424a;
-  color:#ffffff;
-  margin-top:10px;
-  margin-bottom:10px;
-}
-
-/* Header **/
-header{
-  background:#35424a;
-  color:#ffffff;
-  padding-top:30px;
-  min-height:70px;
-  border-bottom:#e8491d 3px solid;
-}
-
-header a{
-  color:#ffffff;
-  text-decoration:none;
-  text-transform: uppercase;
-  font-size:16px;
-}
-
-header li{
-  float:left;
-  display:inline;
-  padding: 0 20px 0 20px;
-}
-
-header #branding{
-  float:left;
-}
-
-header #branding h1{
-  margin:0;
-}
-
-header nav{
-  float:right;
-  margin-top:10px;
-}
-
-header .highlight, header .current a{
-  color:#e8491d;
-  font-weight:bold;
-}
-
-header a:hover{
-  color:#cccccc;
-  font-weight:bold;
-}
 
 /* Showcase */
 #showcase{
@@ -163,6 +93,78 @@ ul#services li{
   background:#e6e6e6;
 }
 
+
+/* Image Gallery */
+
+div.responsive {
+  border: 1px solid #ccc;
+  margin-left: -18px;
+}
+
+
+
+div .responsive img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.responsive {
+  padding: 0 30px;
+  float: left;
+  width: 25.99999%;
+}
+
+/* Flex box */
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+.flex-container > div img {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 0.5rem!important;
+}
+
+
+/*footer*/
 footer{
   padding:20px;
   margin-top:20px;
@@ -195,7 +197,7 @@ footer{
   }
 
   #newsletter button, .quote button{
-    display:block;
+    display:flex;
     width:100%;
   }
 
