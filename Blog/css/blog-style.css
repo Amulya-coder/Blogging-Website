@@ -9,7 +9,6 @@ body{
 	box-sizing: border-box;
 }
 
-
 .row:after{
 	content: '';
 	display: table;
@@ -30,12 +29,10 @@ header img{
 	object-fit: contain;
 }
 
-
 h2{
-	color:#000000;
-margin:1.5 0px;	
+   color:#000000;
+   margin:1.5 0px;	
 }
-
 
 .left-column{
 float: left;
@@ -48,21 +45,19 @@ width: 75%;
  padding-left:20px;
 }
 .card{
-	padding: 20px;
-	background-color: #ffffff;
- margin-top:20px;
+      padding: 20px;
+      background-color: #ffffff;
+      margin-top:20px;
 }
 
 .card img{
 	width: 100%;
 	image-resolution:500dpi;
-}
-
+      }
 
 .right-column .card img{
 	margin-bottom: 10px;
 }
-
 
 /* breadcrumb styling */
 .breadcrumb {
@@ -93,12 +88,9 @@ ol {
     color: #6c757d;
 }
 
-
 .breadcrumb-item.breadcrumb-item {
     padding-left: .5rem;
 }
-
-
 
 a {
     color: #007bff;
@@ -161,9 +153,7 @@ footer .social a{
     padding: 2px;
     font-size: 20px;
 
-
 }
-
 
 .btn {
     display: inline-block;
