@@ -1,5 +1,6 @@
 @import url(style2.css);
-
+@import url(card.css);
+@import url(blog-style.css);
 body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
@@ -7,6 +8,74 @@ body{
   background-color:#f4f4f4;
 }
 
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
 
 
 /* Showcase */
@@ -45,8 +114,8 @@ body{
 }
 
 #newsletter input[type="email"]{
-  padding:4px;
-  height:25px;
+  padding:10px;
+  height:38px;
   width:250px;
 }
 
@@ -94,40 +163,11 @@ ul#services li{
 }
 
 
-/* Image Gallery */
-
-div.responsive {
-  border: 1px solid #ccc;
-  margin-left: -18px;
-}
-
-
-
-div .responsive img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-
-
-.responsive {
-  padding: 0 30px;
-  float: left;
-  width: 25.99999%;
-}
-
 /* Flex box */
-
 
 .flex-container {
   display: flex;
-  flex-wrap: nowrap;
-  
+  flex-wrap: nowrap;  
 }
 
 .flex-container > div img {
@@ -140,14 +180,20 @@ div.desc {
 }
 
 
-@media only screen and (max-width: 700px) {
+/* Media Queries */
+@media only screen and (max-width: 768px) {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
+
+header{
+    padding-bottom:20px;
+  }
+
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .responsive {
     width: 100%;
   }
@@ -172,6 +218,7 @@ footer{
   background-color:#e8491d;
   text-align: center;
 }
+
 
 /* Media Queries */
 @media(max-width: 768px){
